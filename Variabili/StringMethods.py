@@ -4,5 +4,5 @@
 
 nome=str(input("Inserisci il tuo nome: "))
 
-#Len -> conta quanti caratteri ci sono in una stringa
+#Len -> conta quanti caratteri ci sono in una stringa (parte da 0 come ogni linguaggio di programmazione)
 print(f"La lunghezza del nome è {len(nome)}")

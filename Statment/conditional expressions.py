@@ -5,5 +5,18 @@
 numero=int(input("Inserisci un numero: "))
 print("Positivo" if numero>=0 else "Negativo")
 
-numeroPN=True if numero>=0 else False
-print(f"Il numero è positivo? {numeroPN}")
+numero1="Positivo" if numero>=0 else "Negativo"
+print(f"Il numero {numero} è {numero1}.")
+
+#Esempio per trovare il massimo e il minimo tra due numeri
+#Input dei numeri
+a=int(input("Inserisci il primo numero: "))
+b=int(input("Inserisci il secondo numero: "))
+
+#Confronto
+massimo=a if a>b else b
+minimo=b if a>b else a
+
+#Stampa i risultati
+print(f"Il massimo tra {a} e {b} è {massimo}.")
+print(f"Il minimo tra {a} e {b} è {minimo}.")
