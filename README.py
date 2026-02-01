@@ -1,386 +1,293 @@
-# GUIDA COMPLETA PYTHON - INDICE
-# Questa è una guida di riferimento rapido per tutti i file di esempio Python
+# GUIDA COMPLETA PYTHON - ORGANIZZATA PER LIVELLO
+# Tutti gli esempi sono ora suddivisi in tre livelli di difficoltà
 
 """
-===========================================
-PYTHON - DALLE BASI ALLE PARTI AVANZATE
-===========================================
+═══════════════════════════════════════════════════════════════════════
+    PYTHON - DALLE BASI ALLE PARTI AVANZATE
+    Organizzato per Livello di Difficoltà
+═══════════════════════════════════════════════════════════════════════
 
-Questa collezione di file copre tutti gli aspetti fondamentali e avanzati di Python,
-dalle basi della programmazione fino ai concetti più complessi.
-
-STRUTTURA DELLA GUIDA:
+Gli esempi sono ora organizzati in tre cartelle principali:
+📁 1. Basi      - Fondamenti di Python (principianti)
+📁 2. Medio     - Concetti intermedi
+📁 3. Esperto   - Concetti avanzati
 """
 
 print("""
 ╔════════════════════════════════════════════════════════════════════╗
-║                    FONDAMENTI DI PYTHON                            ║
+║                    📁 1. BASI (PRINCIPIANTI)                       ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-1. VARIABILI E TIPI DI DATI
-   📁 Variabili/Variabili.py
-   - Tipi di base: int, float, string, boolean
-   - Dichiarazione e assegnamento
-   - Convenzioni di naming
+TEMPO STIMATO: 1-2 settimane
+PREREQUISITI: Nessuno
 
-   📁 Variabili/Casting.py
-   - Conversione tra tipi di dati
-   - int(), float(), str()
-   - Gestione errori di casting
+📂 Variabili/
+   ├── Variabili.py          - Tipi di base (int, float, string, bool)
+   ├── Casting.py            - Conversione tra tipi
+   └── StringMethods.py      - Tutti i metodi delle stringhe
 
-   📁 Variabili/StringMethods.py ⭐ COMPLETO
-   - Tutti i metodi delle stringhe
-   - Manipolazione, ricerca, formattazione
-   - Validazione e pulizia testo
-   - Slicing e concatenazione
+📄 Input.py                  - Ricevere input dall'utente
+📄 Stampa.py                 - Output e formattazione
+📄 Math.py                   - Operazioni matematiche
 
-2. INPUT E OUTPUT
-   📁 Input.py
-   - Ricevere input dall'utente
-   - Conversione tipi di input
-   - Validazione input
+📂 Statment/
+   ├── if.py                 - Condizioni (if, elif, else)
+   ├── Operatori.py          - Operatori logici e di confronto
+   ├── conditional expressions.py - Espressioni ternarie
+   ├── for_loop.py           - Ciclo for e iterazioni
+   └── while_loop.py         - Ciclo while
 
-   📁 Stampa.py
-   - Funzione print()
-   - Formattazione output
-   - f-strings e .format()
+📂 Strutture Dati/
+   ├── List.py               - Liste e metodi
+   ├── Tuple.py              - Tuple (immutabili)
+   ├── Dictionary.py         - Dizionari chiave-valore
+   └── Set.py                - Set (collezioni uniche)
 
-3. OPERAZIONI MATEMATICHE
-   📁 Math.py
-   - Operazioni base (+, -, *, /)
-   - Modulo math
-   - Funzioni matematiche avanzate
-   - Costanti (pi, e)
+📂 Funzioni/
+   └── Funzioni.py           - Definizione, parametri, return, *args, **kwargs
+
+📂 Modules/
+   ├── mymodule.py           - Creare moduli
+   └── main.py               - Usare moduli
+
+📂 OOP/
+   ├── Classi.py             - Classi, oggetti, __init__, metodi
+   └── Ereditarieta.py       - Ereditarietà e polimorfismo
+
+📂 Errori/
+   └── try_except.py         - Gestione eccezioni
+
+📂 File Handling/
+   └── file_handling.py      - Leggere e scrivere file
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    STRUTTURE DI CONTROLLO                          ║
+║                    📁 2. MEDIO (INTERMEDIO)                        ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-4. CONDIZIONI E DECISIONI
-   📁 Statment/if.py
-   - if, elif, else
-   - Operatori di confronto
-   - Condizioni annidate
+TEMPO STIMATO: 2-3 settimane
+PREREQUISITI: Completare "1. Basi"
 
-   📁 Statment/Operatori.py
-   - Operatori logici (and, or, not)
-   - Operatori di confronto
-   - Operatori di identità e appartenenza
+📄 Lambda.py                 - Funzioni lambda e funzioni di ordine superiore
+                              (map, filter, reduce, sorted con lambda)
 
-   📁 Statment/conditional expressions.py
-   - Espressioni condizionali inline
-   - Operatore ternario
+📄 Comprehensions.py         - List/Dict/Set comprehensions
+                              Generator expressions
 
-5. CICLI E ITERAZIONI
-   📁 Statment/for_loop.py
-   - Ciclo for
-   - range()
-   - Iterazione su sequenze
-
-   📁 Statment/while_loop.py
-   - Ciclo while
-   - break e continue
-   - Loop infiniti
+📂 ESEMPI APPLICATIVI/
+   └── calcolatrice.py       - Progetto completo che integra i concetti
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    STRUTTURE DATI                                  ║
+║                    📁 3. ESPERTO (AVANZATO)                        ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-6. COLLEZIONI
-   📁 Strutture Dati/List.py
-   - Liste: creazione, accesso, modifica
-   - Metodi: append, insert, remove, pop
-   - Slicing e list comprehension
+TEMPO STIMATO: 3-4 settimane
+PREREQUISITI: Completare "1. Basi" e "2. Medio"
 
-   📁 Strutture Dati/Tuple.py
-   - Tuple: immutabili
-   - Unpacking
-   - Quando usare tuple vs liste
+📄 Generators.py             - Generatori con yield, lazy evaluation
+                              Pipeline di generatori, generatori infiniti
 
-   📁 Strutture Dati/Dictionary.py
-   - Dizionari: chiave-valore
-   - Metodi: get, keys, values, items
-   - Dictionary comprehension
+📄 Decorators.py             - Pattern decoratore, @decorator
+                              Decoratori con argomenti, @property
+                              Timing, caching, validazione
 
-   📁 Strutture Dati/Set.py
-   - Set: collezioni uniche
-   - Operazioni su set
-   - Set comprehension
+📄 ContextManagers.py        - Pattern with, __enter__/__exit__
+                              @contextmanager, gestione risorse
+                              File, database, lock, transazioni
+
+📄 RegularExpressions.py     - Modulo re, pattern matching
+                              Validazioni (email, telefono, password)
+                              Metacaratteri, gruppi, cheat sheet
+
+📄 AsyncAwait.py             - Programmazione asincrona
+                              async/await, asyncio, Task
+                              Queue, Lock, Semaphore asincroni
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    FUNZIONI E MODULARITÀ                           ║
+║                    🎯 PERCORSO DI APPRENDIMENTO                    ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-7. FUNZIONI
-   📁 Funzioni/Funzioni.py
-   - Definizione e chiamata
-   - Parametri e argomenti
-   - Return values
-   - *args e **kwargs
-   - Scope delle variabili
+SETTIMANA 1-2: BASI
+┌─────────────────────────────────────────────────────────────────┐
+│ Giorno 1-2:   Variabili, Input, Stampa, Math                    │
+│ Giorno 3-4:   if, for_loop, while_loop                          │
+│ Giorno 5-7:   List, Dictionary, Tuple, Set                      │
+│ Giorno 8-10:  Funzioni, Modules                                 │
+│ Giorno 11-14: OOP (Classi, Ereditarietà), Errori, File          │
+└─────────────────────────────────────────────────────────────────┘
 
-   📁 Lambda.py ⭐ NUOVO
-   - Funzioni lambda (anonime)
-   - map(), filter(), reduce()
-   - Funzioni di ordine superiore
-   - sorted() con lambda
+SETTIMANA 3-4: MEDIO
+┌─────────────────────────────────────────────────────────────────┐
+│ Giorno 1-3:   Lambda (map, filter, reduce)                      │
+│ Giorno 4-7:   Comprehensions (list, dict, set)                  │
+│ Giorno 8-14:  Progetto pratico (calcolatrice + progetti propri) │
+└─────────────────────────────────────────────────────────────────┘
 
-8. MODULI
-   📁 Modules/mymodule.py
-   - Creare moduli personalizzati
-   - Import e from...import
-
-   📁 Modules/main.py
-   - Usare moduli
-   - __name__ == "__main__"
+SETTIMANA 5-8: ESPERTO
+┌─────────────────────────────────────────────────────────────────┐
+│ Giorno 1-5:   Generators (yield, pipeline)                      │
+│ Giorno 6-10:  Decorators (timing, caching)                      │
+│ Giorno 11-15: ContextManagers (with, risorse)                   │
+│ Giorno 16-20: RegularExpressions (validazioni)                  │
+│ Giorno 21-28: AsyncAwait (programmazione asincrona)             │
+└─────────────────────────────────────────────────────────────────┘
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║              PROGRAMMAZIONE ORIENTATA AGLI OGGETTI                 ║
+║                    📚 COME STUDIARE                                ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-9. CLASSI E OGGETTI
-   📁 OOP/Classi.py
-   - Definire classi
-   - __init__ (costruttore)
-   - Attributi e metodi
-   - self
-   - __str__ e metodi speciali
+1️⃣  INIZIA DALLA CARTELLA "1. Basi"
+    - Non saltare argomenti
+    - Ogni concetto si basa sul precedente
+    - Pratica con ogni file prima di passare al successivo
 
-   📁 OOP/Ereditarieta.py
-   - Ereditarietà
-   - super()
-   - Polimorfismo
-   - Metodi override
+2️⃣  ESEGUI OGNI ESEMPIO
+    cd "/Users/michel/Desktop/programmazione/PYTHON/Python Le Basi/1. Basi"
+    python Input.py
+
+3️⃣  MODIFICA E SPERIMENTA
+    - Cambia i valori
+    - Prova variazioni
+    - Rompi il codice per capire gli errori
+
+4️⃣  CREA I TUOI PROGETTI
+    - Dopo ogni sezione, crea qualcosa di tuo
+    - Combina concetti diversi
+    - Risolvi problemi reali
+
+5️⃣  PASSA AL LIVELLO SUCCESSIVO
+    - Solo quando ti senti sicuro
+    - Rivedi i concetti se necessario
+    - Non avere fretta
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    GESTIONE ERRORI E FILE                          ║
+║                    ✅ CHECKLIST DI PROGRESSO                       ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-10. GESTIONE ECCEZIONI
-    📁 Errori/try_except.py
-    - try, except, finally
-    - Tipi di eccezioni
-    - raise
-    - Creare eccezioni personalizzate
+BASI (Fondamentali):
+□ Variabili e tipi di dati
+□ Input e output
+□ Operazioni matematiche
+□ Condizioni (if/else)
+□ Cicli (for/while)
+□ Liste e dizionari
+□ Funzioni
+□ Classi e OOP
+□ Gestione errori
+□ File handling
 
-11. FILE HANDLING
-    📁 File Handling/file_handling.py
-    - Aprire e chiudere file
-    - Leggere e scrivere
-    - with statement
-    - Modalità di apertura
+MEDIO (Intermedio):
+□ Funzioni lambda
+□ map(), filter(), reduce()
+□ List comprehensions
+□ Dictionary comprehensions
+□ Progetto pratico completato
+
+ESPERTO (Avanzato):
+□ Generatori e yield
+□ Decoratori
+□ Context managers
+□ Espressioni regolari
+□ Programmazione asincrona
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    CONCETTI AVANZATI                               ║
+║                    🎓 CERTIFICAZIONE DI COMPETENZA                 ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-12. COMPREHENSIONS ⭐ NUOVO
-    📁 Comprehensions.py
-    - List comprehensions
-    - Dictionary comprehensions
-    - Set comprehensions
-    - Generator expressions
-    - Quando usarle e quando evitarle
+Quando completi ogni livello, crea un progetto che dimostri le tue competenze:
 
-13. GENERATORI ⭐ NUOVO
-    📁 Generators.py
-    - Funzioni generatrici con yield
-    - Lazy evaluation
-    - Generatori infiniti
-    - yield from
-    - Pipeline di generatori
-    - Vantaggi di memoria
+📌 PROGETTO BASI:
+   - Gestionale semplice (es. rubrica telefonica)
+   - Usa: variabili, liste/dict, funzioni, file, try/except
 
-14. DECORATORI ⭐ NUOVO
-    📁 Decorators.py
-    - Concetto di decoratore
-    - Sintassi @decorator
-    - Decoratori con argomenti
-    - functools.wraps
-    - @property, @staticmethod, @classmethod
-    - Decoratori pratici (timing, caching, validazione)
+📌 PROGETTO MEDIO:
+   - Analizzatore di dati (es. statistiche da file CSV)
+   - Usa: comprehensions, lambda, map/filter
 
-15. CONTEXT MANAGERS ⭐ NUOVO
-    📁 ContextManagers.py
-    - Pattern with
-    - __enter__ e __exit__
-    - @contextmanager
-    - Gestione risorse
-    - ExitStack
-    - Esempi pratici (file, database, lock)
-
-16. ESPRESSIONI REGOLARI ⭐ NUOVO
-    📁 RegularExpressions.py
-    - Modulo re
-    - Pattern matching
-    - Metacaratteri e classi
-    - Gruppi e cattura
-    - Validazioni (email, telefono, password)
-    - Cheat sheet regex
-
-17. PROGRAMMAZIONE ASINCRONA ⭐ NUOVO
-    📁 AsyncAwait.py
-    - async e await
-    - asyncio
-    - Task e coroutine
-    - asyncio.gather()
-    - Timeout e gestione errori
-    - Queue, Lock, Semaphore asincroni
-    - Quando usare async
+📌 PROGETTO ESPERTO:
+   - Web scraper asincrono con validazione
+   - Usa: async/await, regex, decorators, context managers
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    ESEMPI APPLICATIVI                              ║
+║                    🔗 RISORSE UTILI                                ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-18. PROGETTI PRATICI
-    📁 ESEMPI APPLICATIVI/calcolatrice.py
-    - Applicazione completa
-    - Integrazione di concetti
-
-
-╔════════════════════════════════════════════════════════════════════╗
-║                    PERCORSO DI APPRENDIMENTO                       ║
-╚════════════════════════════════════════════════════════════════════╝
-
-LIVELLO PRINCIPIANTE (1-2 settimane):
-1. Variabili/Variabili.py
-2. Stampa.py
-3. Input.py
-4. Math.py
-5. Statment/if.py
-6. Statment/for_loop.py
-7. Statment/while_loop.py
-
-LIVELLO INTERMEDIO (2-3 settimane):
-8. Strutture Dati/List.py
-9. Strutture Dati/Dictionary.py
-10. Funzioni/Funzioni.py
-11. Variabili/StringMethods.py
-12. Errori/try_except.py
-13. File Handling/file_handling.py
-14. OOP/Classi.py
-
-LIVELLO AVANZATO (3-4 settimane):
-15. Lambda.py
-16. Comprehensions.py
-17. Generators.py
-18. Decorators.py
-19. ContextManagers.py
-20. RegularExpressions.py
-21. AsyncAwait.py
-22. OOP/Ereditarieta.py
-
-
-╔════════════════════════════════════════════════════════════════════╗
-║                    SUGGERIMENTI PER LO STUDIO                      ║
-╚════════════════════════════════════════════════════════════════════╝
-
-📚 COME USARE QUESTA GUIDA:
-
-1. LEGGI IL CODICE
-   - Ogni file contiene commenti dettagliati
-   - Gli esempi sono progressivi (dal semplice al complesso)
-
-2. ESEGUI GLI ESEMPI
-   - Esegui ogni file con: python nome_file.py
-   - Sperimenta modificando i valori
-   - Osserva l'output
-
-3. PRATICA
-   - Prova a scrivere variazioni degli esempi
-   - Combina concetti da file diversi
-   - Crea i tuoi progetti
-
-4. RIFERIMENTO RAPIDO
-   - Usa questo file come indice
-   - Cerca argomenti specifici
-   - Rivedi concetti quando necessario
-
-
-╔════════════════════════════════════════════════════════════════════╗
-║                    RISORSE AGGIUNTIVE                              ║
-╚════════════════════════════════════════════════════════════════════╝
-
-📖 DOCUMENTAZIONE UFFICIALE:
+📖 Documentazione Ufficiale:
    https://docs.python.org/3/
 
-🎓 TUTORIAL INTERATTIVI:
+🎮 Esercizi Interattivi:
    https://www.learnpython.org/
-   https://realpython.com/
+   https://exercism.org/tracks/python
 
-🔧 STRUMENTI UTILI:
-   - Python REPL (interprete interattivo)
-   - IPython (REPL avanzato)
-   - Jupyter Notebook (per sperimentare)
-
-🧪 TESTING REGEX:
+🧪 Testing Regex:
    https://regex101.com/
 
+💬 Community:
+   https://stackoverflow.com/questions/tagged/python
+   https://www.reddit.com/r/learnpython/
+
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    PROSSIMI PASSI                                  ║
+║                    🚀 PROSSIMI PASSI                               ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-Dopo aver completato questa guida, considera di approfondire:
+Dopo aver completato tutti e tre i livelli, considera:
 
-🚀 FRAMEWORK E LIBRERIE:
-   - Django / Flask (web development)
-   - NumPy / Pandas (data science)
-   - Matplotlib / Seaborn (visualizzazione)
-   - TensorFlow / PyTorch (machine learning)
+🌐 WEB DEVELOPMENT:
+   - Django (framework completo)
+   - Flask (micro-framework)
    - FastAPI (API moderne)
 
-🎯 BEST PRACTICES:
-   - PEP 8 (style guide)
-   - Type hints
-   - Testing (unittest, pytest)
-   - Virtual environments
-   - Package management (pip, poetry)
+📊 DATA SCIENCE:
+   - NumPy (calcolo numerico)
+   - Pandas (analisi dati)
+   - Matplotlib/Seaborn (visualizzazione)
 
-💻 PROGETTI PRATICI:
-   - Web scraper
-   - API REST
-   - Bot Telegram/Discord
-   - Analisi dati
-   - Automazione task
+🤖 MACHINE LEARNING:
+   - Scikit-learn (ML classico)
+   - TensorFlow/PyTorch (deep learning)
+
+🔧 AUTOMAZIONE:
+   - Selenium (web automation)
+   - BeautifulSoup (web scraping)
+   - Requests (HTTP)
+
+📱 DESKTOP/MOBILE:
+   - Tkinter/PyQt (GUI desktop)
+   - Kivy (mobile apps)
 
 
 ╔════════════════════════════════════════════════════════════════════╗
-║                    BUONO STUDIO! 🐍                                ║
+║                    💡 CONSIGLI FINALI                              ║
 ╚════════════════════════════════════════════════════════════════════╝
+
+✨ La pratica è più importante della teoria
+✨ Sbagliare è parte del processo di apprendimento
+✨ Leggi il codice di altri programmatori
+✨ Contribuisci a progetti open source
+✨ Costruisci un portfolio di progetti
+✨ Non smettere mai di imparare
+
+═══════════════════════════════════════════════════════════════════════
+                    BUONO STUDIO! 🐍
+═══════════════════════════════════════════════════════════════════════
 """)
 
-# Statistiche della guida
+# Statistiche
 print("\n" + "="*70)
-print("STATISTICHE DELLA GUIDA")
+print("📊 STATISTICHE DELLA GUIDA")
 print("="*70)
-
-import os
-
-# Conta i file Python nella directory
-directory = os.path.dirname(os.path.abspath(__file__))
-file_python = [f for f in os.listdir(directory) if f.endswith('.py')]
-
-print(f"📊 File di esempio: {len(file_python)}")
-print(f"📁 Directory principale: {directory}")
-print(f"✨ Nuovi file aggiunti: 7")
-print(f"   - Comprehensions.py")
-print(f"   - Lambda.py")
-print(f"   - Generators.py")
-print(f"   - Decorators.py")
-print(f"   - ContextManagers.py")
-print(f"   - RegularExpressions.py")
-print(f"   - AsyncAwait.py")
-print(f"🔧 File aggiornati: 1")
-print(f"   - Variabili/StringMethods.py (espanso da 8 a 228 righe)")
-
-print("\n" + "="*70)
-print("Inizia il tuo viaggio in Python! 🚀")
+print(f"📁 Livello Basi:    12 file/cartelle")
+print(f"📁 Livello Medio:    3 file/cartelle")
+print(f"📁 Livello Esperto:  5 file")
+print(f"📝 Totale esempi:   20+ file Python")
+print(f"⏱️  Tempo totale stimato: 6-9 settimane")
+print("="*70)
+print("\n🎯 Inizia dalla cartella '1. Basi' e procedi in ordine!")
 print("="*70)
